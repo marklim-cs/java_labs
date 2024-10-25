@@ -12,9 +12,9 @@ public class PhraseOMatic {
         int threeLength = wordListThree.length;
 
         java.util.Random randomGenerator = new java.util.Random();
-        int random1 = randomGenerator(oneLength);
-        int random2 = randomGenerator(twoLength);
-        int random3 = randomGenerator(threeLength);
+        int random1 = randomGenerator.nextInt(oneLength);
+        int random2 = randomGenerator.nextInt(twoLength);
+        int random3 = randomGenerator.nextInt(threeLength);
 
         String phrase = wordListOne[random1] + " " + wordListTwo[random2] + " " + wordListThree[random3];
 
