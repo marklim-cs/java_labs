@@ -12,6 +12,16 @@ public class Main {
 
         int x = 5, y = 40;
         String upperName = name.toUpperCase();
+        String txt = "Please, specify the index where 'index' has occurred";
+
+        int myAge = 19, drivingAge = 18;
+
+        if (myAge >= drivingAge) {
+            System.out.printf("Your age is %s. You are allowed to drive. \n", myAge);
+        }
+        else {
+            System.out.printf("Your age is %s. You are not allowed to drive", myAge);
+        }
 
         /*
         %s - as a placeholder for a string,
@@ -28,5 +38,8 @@ public class Main {
         System.out.printf("The length of the name is %d and this isn't a lot %n", name.length());
         System.out.println(name.toUpperCase());
         System.out.println(upperName.toLowerCase());
+        System.out.println(txt.indexOf("index"));
+        System.out.println(name + " " + upperName);
+        System.out.println(name.concat(upperName));
     }
         }
